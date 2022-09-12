@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d203ffb3b7.js" crossorigin="anonymous" async></script>
+
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+</head>
+<body>
+
+  <nav class="navHolder">
+    <div class="navLeft">
+      <img src="/images/logo.svg" alt="Shortly logo">
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+    <div class="navRight">
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><button class="signUp">Sign Up</button></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <div class="landing">
+      <div class="leftText">
+        <h1>More than just shorter links</h1>
+        <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+        <button class="getStarted">Get Started</button>
+      </div>
+      <div class="rightImg">
+
+      </div>
+    </div>
+  </main>
+
+  <section class="urlSection">
+    <div class="urlInput">
+      <input type="text" placeholder="Shorten a link here..." class="urlShorten" id="shortenThisUrl">
+      <button class="shortenButton" id="shorten">Shorten it!</button>
+    </div>
+  </section>
+
+  <section class="statistics">
+    <div class="urlHolder">
+      
+    </div>
+    <h2>Advanced Statistics</h2>
+    <p class="statP">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+    <div class="statFacts">
+      <div class="stat1">
+        <span class="circle1"></span>
+        <div class="textWrapper">
+          <h3>Brand Recognition</h3>
+          <p class="wrapperP">Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
+      </div>
+      <div class="stat2">
+        <span class="circle2"></span>
+        <div class="textWrapper">
+          <h3>Detailed Records</h3>
+          <p class="wrapperP">Gain insights into who is clicking your links. Knowing when and where people engange with your content helps inform better decisions.</p>
+        </div>
+      </div>
+      <div class="stat3">
+        <span class="circle3"></span>
+        <div class="textWrapper">
+          <h3>Fully Customizable</h3>
+          <p class="wrapperP">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="generateLink">
+    <h3>Boost your links today</h3>
+    <button class="getStarted">Get Started</button>
+  </section>
+
+  <footer>
+      <img src="/images/logo.svg" alt="Shortly logo">
+      <ul>
+        <p>Features</p>
+        <li><a href="#">Link Shortening</a></li>
+        <li><a href="#">Branded Links</a></li>
+        <li><a href="#">Analytics</a></li>
+      </ul>
+      <ul>
+        <p>Resources</p>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <ul>
+        <p>Company</p>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="logoContainer"> 
+        <img src="/images/icon-facebook.svg" alt="Facebook icon">
+        <img src="/images/icon-twitter.svg" alt="Twitter icon">
+        <img src="/images/icon-pinterest.svg" alt="Pinterest icon">
+        <img src="/images/icon-instagram.svg" alt="Instagram icon">
+      </div>
+  </footer>  
+
+  <script src="urlshortener.js"></script>
+</body>
+</html>

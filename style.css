@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cyan: hsl(180, 66%, 49%);
+    --dark-violet: hsl(257, 27%, 26%);
+    --red: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+}
+
+.navHolder {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 3em 0 3em 0;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+.navLeft {
+    display: flex;
+    align-items: center;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+}
+
+.navLeft img {
+    padding-right: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+a:hover {
+    color: black;
+    transition: .2s ease-in;
+}
+
+.signUp {
+    background-color: var(--cyan);
+    border: none;
+    color: white;
+    cursor: pointer;
+    height: 2.8em;
+    width: 6.5em;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.signUp:hover {
+    opacity: .8;
+    transition: .2s ease-in;
+}
+
+.landing {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.leftText {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.leftText h1 {
+    padding-top: 1em;
+    font-size: 3.5em;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+.leftText p {
+    color: var(--gray);
+    font-weight: 500;
+    width: 80%;
+    padding-bottom: 2em;
+}
+
+.rightImg {
+    background-image: url(/images/illustration-working.svg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 30em;
+}
+
+.getStarted {
+    background-color: var(--cyan);
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 10em;
+    padding: .8em;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.getStarted:hover {
+    opacity: .8;
+    transition: .2s ease-in;
+}
+
+.urlSection {
+    background-color: var(--gray);
+    width: 100%;
+}
+
+.urlInput {
+    margin: 0 auto;
+    width: 72.5%;
+    background-color: var(--dark-violet);
+    background-image: url(/images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2.5em;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -3.88em;
+}
+
+.shortenButton {
+    height: 50px;
+    width: 13%;
+    border: none;
+    background-color: var(--cyan);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.shortenButton:hover {
+    opacity: .8;
+    transition: .2s ease-in;
+}
+
+.urlShorten {
+    height: 50px;
+    width: 85%;
+    border-radius: 8px;
+    padding-left: .5em;
+    padding-right: .5em;
+    border: none;
+    margin-right: .5em;
+}
+
+.urlHolder {
+    height: 240px;
+    width: 80%;
+    position: relative;
+    top: -50px;
+    overflow: auto;
+}
+
+.urlGenerated {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.urlText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1em;
+    width: 85%;
+}
+
+.copyMe {
+    height: 40px;
+    width: 80px;
+    background-color: var(--cyan);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.ogURL {
+    color: var(--grayish-violet);
+    overflow-x: scroll;
+    width: 65%;
+}
+
+.newURL {
+    color: var(--cyan);
+    overflow-x: scroll;
+}
+
+.statistics {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    background: var(--gray);
+    height: 50em;
+}
+
+.statistics h2 {
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: .5em;
+}
+
+.statP {
+    font-weight: 500;
+    color: var(--grayish-violet);
+    width: 36%;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+.statFacts {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.stat1, .stat2, .stat3 {
+    width: 300px;
+    height: 220px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.stat2 {
+    position: relative;
+    top: 50px;
+}
+
+.stat3 {
+    position: relative;
+    top: 100px;
+}
+
+.stat1 .circle1, .stat2 .circle2, .stat3 .circle3 {
+    background-color: var(--dark-violet);
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    top: -37.5px;
+    right: -25px;
+    background-image: url(/images/icon-brand-recognition.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle2 {
+    background-image: url(/images/icon-detailed-records.svg) !important;
+}
+
+.circle3 {
+    background-image: url(/images/icon-fully-customizable.svg) !important;
+}
+
+.textWrapper {
+    margin-top: -1em !important;
+    padding-left: 1.3em;
+}
+
+.wrapperP {
+    width: 90%;
+    font-size: 15px;
+    text-align: left;
+}
+
+.generateLink {
+    height: 12em;
+    background-color: var(--dark-violet);
+    background-image: url(/images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.generateLink h3 {
+    color: white;
+    padding-bottom: 1em;
+}
+
+footer {
+    background-color: var(--very-dark-violet);
+    display: flex;
+    justify-content: space-evenly;
+    height: 12em;
+    padding-top: 6em;
+}
+
+footer img {
+    width: 157px;
+    height: 40px;
+}
+
+footer li {
+    color: white;
+    font-size: 14px;
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+footer li a:hover {
+    color: var(--cyan);
+}
+
+footer p {
+    color: white;
+    font-weight: 700;
+}
+
+.logoContainer img {
+    height: 25px;
+    width: 25px;
+}
+
+.logoContainer img:hover {
+    cursor: pointer;
+}
