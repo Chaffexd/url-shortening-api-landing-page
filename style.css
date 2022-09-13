@@ -17,6 +17,10 @@
     --very-dark-violet: hsl(260, 8%, 14%);
 }
 
+.mobileNav {
+    display: none;
+}
+
 .navHolder {
     display: flex;
     justify-content: space-between;
