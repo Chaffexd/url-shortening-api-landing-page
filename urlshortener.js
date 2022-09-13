@@ -2,7 +2,8 @@ const shortenButton = document.getElementById("shorten");
 const shortenThisUrl = document.getElementById("shortenThisUrl");
 const newUrlContainer = document.querySelector(".urlHolder");
 
-const copyButton = document.querySelectorAll(".copyMe");
+const copyContainer = document.querySelector(".urlHolder");
+const copyButton = document.querySelector(".copyMe");
 const newUrlToCopy = document.querySelector(".newURL");
 
 shortenButton.addEventListener("click", () => {
@@ -40,16 +41,18 @@ shortenButton.addEventListener("click", () => {
             newButton.className = "copyMe";
             newButton.innerHTML = "Copy";
             newDiv.appendChild(newButton)
+
+            newButton.addEventListener("click", (e) => {
+                // Since this element is dynamically created, we need to delegate the action so we're using target
+                if (e.target.classList.contains("copyMe")) {
+                    navigator.clipboard.writeText(newUrl.innerHTML)
+                    console.log(newUrl.innerHTML)
+                    newButton.classList.add("copied")
+                    newButton.innerHTML = "Copied!"
+                } else {
+                    console.log("couldn't copy")
+                }
+            })
         }
     })
 })
-
-copyButton.forEach(btn => {
-    btn.addEventListener("click", () => {
-        console.log("click")
-    })
-})
-// copyButton.addEventListener("click", () => {
-//     navigator.clipboard.writeText(newUrlToCopy.value)
-//     console.log(newUrlToCopy)
-// })

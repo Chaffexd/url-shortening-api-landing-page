@@ -159,7 +159,7 @@ a:hover {
 }
 
 .shortenButton:hover {
-    opacity: .8;
+    background-color: hsl(180, 55%, 68%);
     transition: .2s ease-in;
 }
 
@@ -175,7 +175,7 @@ a:hover {
 
 .urlHolder {
     height: 240px;
-    width: 80%;
+    width: 78.8%;
     position: relative;
     top: -50px;
     overflow: auto;
@@ -209,6 +209,11 @@ a:hover {
     border: none;
     cursor: pointer;
     margin-right: 1em;
+}
+
+.copyMe:hover {
+    background-color: hsl(180, 55%, 68%);
+    transition: .2s ease-in;
 }
 
 .ogURL {
@@ -250,11 +255,21 @@ a:hover {
     width: 80%;
 }
 
+.backgroundLine {
+    width: 80%;
+    height: 10px;
+    position: relative;
+    z-index: 1;
+    top: 7.77em;
+    background-color: var(--cyan);
+}
+
 .stat1, .stat2, .stat3 {
     width: 300px;
     height: 220px;
     background-color: white;
     border-radius: 8px;
+    z-index: 3;
 }
 
 .stat2 {
@@ -358,4 +373,24 @@ footer p {
 
 .logoContainer img:hover {
     cursor: pointer;
+}
+
+.copied {
+    background-color: var(--dark-violet) !important;
+}
+
+.copied:hover {
+    background-color: hsl(258, 26%, 52%) !important ;
+}
+
+@media only screen and (max-width: 375px) {
+    .navLeft, .navRight {
+        display: none;
+    }
+    .mobileNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 }
