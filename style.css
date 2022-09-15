@@ -397,4 +397,67 @@ footer p {
         align-items: center;
         width: 100%;
     }
+    .landing {
+        flex-direction: column-reverse;
+    }
+    .rightImg {
+        width: 100%;
+        background-size: 90%;
+        height: 16em;
+        background-position: center;
+    }
+    .leftText {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    .leftText p {
+        text-align: center;
+        width: 100%;
+        padding-top: 1em;
+    }
+    .urlInput {
+        flex-direction: column;
+    }
+    .urlShorten {
+        width: 100%;
+        margin-right: 0;
+        padding-left: 5px;
+        padding-right: 0;
+        margin-bottom: .5em;
+    }
+    .shortenButton {
+        width: 101.85%;
+        padding-left: 5px;
+    }
+    .urlGenerated {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .urlHolder {
+        width: 96.5%;
+    }
+    .urlText {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .ogURL, .newURL {
+        width: 100%;
+        text-align: center;
+    }
+    .ogURL {
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    .newURL {
+        margin-bottom: .3em;
+    }
+    .copyMe {
+        margin-bottom: .5em;
+    }
+    
 }
