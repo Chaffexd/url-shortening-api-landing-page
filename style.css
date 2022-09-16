@@ -459,5 +459,30 @@ footer p {
     .copyMe {
         margin-bottom: .5em;
     }
-    
+    .statP {
+        width: 100%;
+    }
+    .statFacts {
+        flex-direction: column;
+    }
+    .backgroundLine {
+        rotate: 90deg;
+        height: 300px;
+        top: 16.5em;
+        width: 150%;
+    }
+    .statistics {
+        padding-bottom: 7em;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        height: auto;
+        padding-top: 2em;
+    }
+    footer img {
+        margin: 0 auto;
+        padding: 1em 0 1em 0;
+    }
 }
