@@ -185,6 +185,7 @@ a:hover {
     overflow: auto;
 }
 
+
 .urlGenerated {
     background-color: white;
     width: 100%;
@@ -263,7 +264,6 @@ a:hover {
     width: 80%;
     height: 10px;
     position: relative;
-    z-index: 1;
     top: 7.77em;
     background-color: var(--cyan);
 }
@@ -419,6 +419,9 @@ footer p {
     }
     .urlInput {
         flex-direction: column;
+        top: -5.5em;
+        background-image: url(/images/bg-shorten-mobile.svg);
+        background-position: center -10px;
     }
     .urlShorten {
         width: 100%;
@@ -436,9 +439,12 @@ footer p {
         align-items: center;
         justify-content: center;
         height: auto;
+
     }
     .urlHolder {
         width: 96.5%;
+        height: 240px !important;
+        display: block;
     }
     .urlText {
         display: flex;
@@ -464,15 +470,17 @@ footer p {
     }
     .statFacts {
         flex-direction: column;
+        position: relative;
+        top: 0em;
     }
     .backgroundLine {
-        rotate: 90deg;
-        height: 300px;
-        top: 16.5em;
-        width: 150%;
+        height: 600px;
+        top: 12.5em;
+        width: 10px;
     }
     .statistics {
         padding-bottom: 7em;
+        height: auto;
     }
     footer {
         flex-direction: column;
@@ -484,5 +492,17 @@ footer p {
     footer img {
         margin: 0 auto;
         padding: 1em 0 1em 0;
+    }
+    .generateLink {
+        background-image: url(/images/bg-boost-mobile.svg);
+        background-position: center -50px;
+        background-size: 110%;
+    }
+    .textWrapper, .wrapperP {
+        text-align: center;
+        padding-left: .5em;
+    }
+    .circle1, .circle2, .circle3 {
+        right: -112px !important;
     }
 }
