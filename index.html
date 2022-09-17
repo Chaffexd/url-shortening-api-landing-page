@@ -16,7 +16,14 @@
   <nav class="navHolder">
     <div class="mobileNav">
       <img src="/images/logo.svg" alt="Shortly logo">
-      <img src="/images/icon-hamburger.svg" alt="Nav drop down">
+      <button id="mobileNav"><img src="/images/icon-menu.svg" alt="Nav drop down"></button>
+      <div class="mobileSlide">
+        <ul>
+          <li class="mobileLi"><a href="#">Features</a></li>
+          <li class="mobileLi"><a href="#">Pricing</a></li>
+          <li class="mobileLi"><a href="#">Resources</a></li>
+        </ul>
+      </div>
     </div>
     <div class="navLeft">
       <img src="/images/logo.svg" alt="Shortly logo">
@@ -39,7 +46,7 @@
       <div class="leftText">
         <h1>More than just shorter links</h1>
         <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
-        <button class="getStarted">Get Started</button>
+        <button class="getStarted"><a href="#urlInput">Get Started</a></button>
       </div>
       <div class="rightImg">
 
@@ -48,7 +55,7 @@
   </main>
 
   <section class="urlSection">
-    <div class="urlInput">
+    <div class="urlInput" id="urlInput">
       <input type="text" placeholder="Shorten a link here..." class="urlShorten" id="shortenThisUrl">
       <button class="shortenButton" id="shorten">Shorten it!</button>
     </div>

@@ -5,6 +5,7 @@
     margin: 0;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -118,13 +119,16 @@ a:hover {
 .getStarted {
     background-color: var(--cyan);
     border: none;
-    color: white;
     cursor: pointer;
     width: 10em;
     padding: .8em;
     border-radius: 25px;
     font-weight: 700;
     font-size: 14px;
+}
+
+.getStarted a {
+    color: white;
 }
 
 .getStarted:hover {
@@ -230,6 +234,17 @@ a:hover {
 .newURL {
     color: var(--cyan);
     overflow-x: scroll;
+}
+
+.urlSpace {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.statP {
+    margin: 0 auto;
 }
 
 .statistics {
@@ -504,5 +519,38 @@ footer p {
     }
     .circle1, .circle2, .circle3 {
         right: -112px !important;
+    }
+    .mobileSlide {
+        position: absolute;
+        right: 37px;
+        top: 100px;
+        width: 80%;
+        border-radius: 8px;
+        height: 15em;
+        background-color: lightgray;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobileActive {
+        display: flex;
+    }
+    .mobileSlide ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobileLi {
+        padding-left: 1em;
+    }
+    .mobileLi a {
+        color: white;
+        font-size: 1.3em;
+        padding-bottom: .5em;
+    }
+    #mobileNav {
+        background: none;
+        border: none;
     }
 }

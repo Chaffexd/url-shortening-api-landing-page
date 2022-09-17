@@ -2,9 +2,16 @@ const shortenButton = document.getElementById("shorten");
 const shortenThisUrl = document.getElementById("shortenThisUrl");
 const newUrlContainer = document.querySelector(".urlHolder");
 
+const mobileNav = document.getElementById("mobileNav");
+const mobileTab = document.querySelector(".mobileSlide");
+
 const copyContainer = document.querySelector(".urlHolder");
 const copyButton = document.querySelector(".copyMe");
 const newUrlToCopy = document.querySelector(".newURL");
+
+mobileNav.addEventListener("click", () => {
+    mobileTab.classList.toggle("mobileActive");
+})
 
 shortenButton.addEventListener("click", () => {
     console.log(shortenThisUrl.value);
