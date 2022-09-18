@@ -264,7 +264,7 @@ a:hover {
 .statP {
     font-weight: 500;
     color: var(--grayish-violet);
-    width: 36%;
+    width: 60%;
     text-align: center;
     padding-bottom: 4em;
 }
@@ -481,7 +481,7 @@ footer p {
         margin-bottom: .5em;
     }
     .statP {
-        width: 100%;
+        width: 40%;
     }
     .statFacts {
         flex-direction: column;
