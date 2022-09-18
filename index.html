@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <nav class="navHolder">
+  <nav class="navHolder" role="navbar">
     <div class="mobileNav">
       <img src="/images/logo.svg" alt="Shortly logo">
       <button id="mobileNav"><img src="/images/icon-menu.svg" alt="Nav drop down"></button>
@@ -42,7 +42,7 @@
   </nav>
   
   <main>
-    <div class="landing">
+    <div class="landing" role="beginning of content">
       <div class="leftText">
         <h1>More than just shorter links</h1>
         <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
@@ -54,14 +54,14 @@
     </div>
   </main>
 
-  <section class="urlSection">
+  <section class="urlSection" role="URL">
     <div class="urlInput" id="urlInput">
       <input type="text" placeholder="Shorten a link here..." class="urlShorten" id="shortenThisUrl">
       <button class="shortenButton" id="shorten">Shorten it!</button>
     </div>
   </section>
 
-  <section class="statistics">
+  <section class="statistics" role="statistics">
     <div class="urlHolder">
       
     </div>
@@ -94,12 +94,12 @@
     </div>
   </section>
 
-  <section class="generateLink">
+  <section class="generateLink" role="generateLink">
     <h3>Boost your links today</h3>
     <button class="getStarted">Get Started</button>
   </section>
 
-  <footer>
+  <footer role="footer">
       <img src="/images/logo.svg" alt="Shortly logo">
       <ul>
         <p>Features</p>
