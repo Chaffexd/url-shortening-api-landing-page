@@ -402,6 +402,11 @@ footer p {
     background-color: hsl(258, 26%, 52%) !important ;
 }
 
+.firstLi {
+    color: white;
+    font-size: 1em;
+}
+
 @media only screen and (max-width: 1025px) {
     .navLeft, .navRight {
         display: none;
