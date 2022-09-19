@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <meta name="URL Shortening app">
+  <meta name="description" content="Shane's IP Service">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Shane Chaffe">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
@@ -14,7 +16,7 @@
 </head>
 <body>
 
-  <nav class="navHolder" role="navbar">
+  <nav class="navHolder" aria-role="navbar">
     <div class="mobileNav">
       <img src="/images/logo.svg" alt="Shortly logo">
       <button id="mobileNav"><img src="/images/icon-menu.svg" alt="Nav drop down"></button>
@@ -43,7 +45,7 @@
   </nav>
   
   <main>
-    <div class="landing" role="beginning of content">
+    <div class="landing" aria-role="beginning of content">
       <div class="leftText">
         <h1>More than just shorter links</h1>
         <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
@@ -55,14 +57,14 @@
     </div>
   </main>
 
-  <section class="urlSection" role="URL">
+  <section class="urlSection" aria-role="URL">
     <div class="urlInput" id="urlInput">
       <input type="text" placeholder="Shorten a link here..." class="urlShorten" id="shortenThisUrl">
       <button class="shortenButton" id="shorten">Shorten it!</button>
     </div>
   </section>
 
-  <section class="statistics" role="statistics">
+  <section class="statistics" aria-role="statistics">
     <div class="urlHolder">
       
     </div>
@@ -95,12 +97,12 @@
     </div>
   </section>
 
-  <section class="generateLink" role="generateLink">
+  <section class="generateLink" aria-role="generateLink">
     <h3>Boost your links today</h3>
     <button class="getStarted">Get Started</button>
   </section>
 
-  <footer role="footer">
+  <footer aria-role="footer">
       <img src="/images/logo.svg" alt="Shortly logo">
       <ul>
         <li class="firstLi">Features</li>
